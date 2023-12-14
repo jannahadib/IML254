@@ -1,0 +1,631 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin: 50px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-color: var(--purple300);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px 0;
+}
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.2s ease-in;
+}
+
+/*HOME*/
+.home-section {
+  background-image: url(images/home_image.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+
+.home-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.home-section h1 {
+  font-size: 96px;
+}
+.home-section h3 {
+  font-size: 32px;
+}
+
+/*sambungan-home*/
+.sambungan-home {
+  padding-top: 50px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sambungan-home .table-container {
+    margin: 20px;
+}
+
+.sambungan-home table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.sambungan-home th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.sambungan-home th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sambungan-home tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/*friend*/
+.friend-section {
+  background-image: url(images/friend_image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+
+.friend-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.friend-section h1 {
+  font-size: 96px;
+}
+.friend-section h3 {
+  font-size: 32px;
+}
+
+/*sambungan-friend*/
+.sambungan-friend {
+  padding-top: 50px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.sambungan-friend h3 {
+  font-color: #063970;
+}
+
+.sambungan-friend body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sambungan-friend .image-container {
+  display: flex;
+}
+
+.sambungan-friend a {
+  margin: 0 10px;
+}
+
+.sambungan-friend img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.sambungan-friend img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*sambungan-friend2*/
+.sambungan-friend2 {
+  padding-top: 0px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sambungan-friend2 h3 {
+  font-color: #063970;
+}
+
+.sambungan-friend2 body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sambungan-friend2 .image-container {
+  display: flex;
+}
+
+.sambungan-friend2 a {
+  margin: 0 10px;
+}
+
+.sambungan-friend2 img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.sambungan-friend2 img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*movie*/
+.movie-section {
+  background-image: url(images/movie_image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+
+.movie-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.movie-section h1 {
+  font-size: 96px;
+}
+.movie-section h3 {
+  font-size: 32px;
+}
+
+/*sambungan-movie*/
+.sambungan-movie {
+  padding-top: 50px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sambungan-movie h3 {
+  font-color: #063970;
+}
+
+.sambungan-movie body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sambungan-movie .image-container {
+  display: flex;
+}
+
+.sambungan-movie a {
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.sambungan-movie img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.sambungan-movie img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*
+.sambungan-movie .image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sambungan-movie img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.sambungan-movie img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+} */
+
+/*myliking*/
+.myliking-section {
+  background-image: url(images/myliking_image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+
+.myliking-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/*.mylikingdo-img {
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}*/
+
+.myliking-section h1 {
+  font-size: 96px;
+}
+.myliking-section h3 {
+  font-size: 32px;
+}
+
+/*sambungan-myliking*/
+.sambungan-myliking {
+  padding-top: 50px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*.sambungan-myliking .video-container {
+    max-width: 800px;
+    width: 100%;
+}*/
+
+.sambungan-myliking video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sambungan-myliking h3 {
+  font-color: #063970;
+}
+
+.sambungan-myliking body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sambungan-myliking .image-container {
+  display: flex;
+}
+
+.sambungan-myliking a {
+  margin: 0 10px;
+}
+
+.sambungan-myliking img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.sambungan-myliking img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+/*sambungan-myliking2*/
+.sambungan-myliking2 {
+  padding-top: 0px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*.sambungan-myliking .video-container {
+    max-width: 800px;
+    width: 100%;
+}*/
+
+.sambungan-myliking2 video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sambungan-myliking2 h3 {
+  font-color: #063970;
+}
+
+.sambungan-myliking2 body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sambungan-myliking2 .image-container {
+  display: flex;
+}
+
+.sambungan-myliking2 a {
+  margin: 0 10px;
+}
+
+.sambungan-myliking2 img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.sambungan-myliking2 img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+/*MYSELF*/
+.myself-section {
+  padding-top: 50px;
+  background: var(--purple500);
+}
+.myself-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.mylife-img {
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}
+.primary-btn {
+  background-color: var(--red600);
+  color: white;
+}
+.secondary-btn {
+  background-color: var(--purple300);
+  color: white;
+}
+
+/*sambungan-myself*/
+.sambungan-myself {
+  padding-top: 500px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sambungan-myself .video-container {
+    max-width: 800px;
+    width: 100%;
+}
+
+.sambungan-myself video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px
+    display: inline-block;
+}
+
+/*family*/
+.family-section {
+  padding-top: 50px;
+  background: var(--purple500);
+}
+.family-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.myfamily-img {
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}
+
+/*sambungan-family*/
+.sambungan-family {
+  padding-top: 500px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sambungan-family .center-container{
+  width: 50%;
+}
+
+.sambungan-family .centered-paragraph {
+  margin: 0;
+  text-align: justify;
+}
+
+/*hobby*/
+.hobby-section {
+  padding-top: 50px;
+  background: var(--purple500);
+}
+.hobby-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hobby-section h3 {
+  font-color: #063970;
+}
+
+.hobby-section body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hobby-section .image-container {
+  display: flex;
+}
+
+.hobby-section a {
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.hobby-section img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.hobby-section img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+
+/*sambungan-hobby*/
+.sambungan-hobby {
+  padding-top: 500px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sambungan-hobby {
+  padding-top: 50px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*lagi css elements diperlukan*/
+.hero-section,
+.video-section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*footer*/
+.footer-lower {
+  background-color: var(--purple300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
